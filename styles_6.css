@@ -1,0 +1,33 @@
+/* Styling the unordered list */
+#customList {
+    list-style-type: circle; /* Set bullet points to circles */
+}
+
+/* Styling all list items */
+#customList li {
+    font-style: italic; /* Make font italic */
+    margin: 5px 0;
+}
+
+/* Remove underline from links */
+#customList a {
+    text-decoration: none;
+}
+
+/* Link pseudo-classes */
+#customList a:link {
+    color: blue; /* Default link color */
+}
+
+#customList a:visited {
+    color: purple; /* Color after visiting */
+}
+
+#customList a:hover {
+    color: green; /* Color when hovering */
+    text-decoration: underline;
+}
+
+#customList a:active {
+    color: red; /* Color when clicking */
+}

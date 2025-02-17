@@ -1,0 +1,32 @@
+/* Styling the table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Table headers */
+th {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/* Table cells */
+td {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/* Alternate row coloring */
+tr:nth-child(even) {
+    background-color: lightgreen;
+}
+
+tr:nth-child(odd) {
+    background-color: gray;
+    color: white;
+}

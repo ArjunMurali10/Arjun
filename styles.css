@@ -1,0 +1,42 @@
+/* Universal selector to reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: lightyellow;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Title styling */
+h1 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Heading styling */
+h2 {
+    text-decoration: underline;
+    color: #444;
+    margin-top: 20px;
+}
+
+/* Paragraph styling */
+p {
+    color: blue;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Image styling */
+img {
+    border: 3px solid green;
+    margin-top: 15px;
+    border-radius: 5px;
+}
