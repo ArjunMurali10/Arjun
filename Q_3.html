@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body>
+    <h2>Place your orders here</h2>
+
+    <form action="#" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label for="mealtype">Meal type:</label>
+        <select id="mealtype" name="mealtype">
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+        </select><br><br>
+
+        <label for="favorite">Choose your favorite:</label>
+        <select id="favorite" name="favorite">
+            <option value="">Select Meal</option>
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+            <option value="pasta">Pasta</option>
+            <option value="salad">Salad</option>
+        </select><br><br>
+
+        <label for="photo">Customer's photo with food:</label>
+        <input type="file" id="photo" name="photo"><br><br>
+
+        <label for="feedback">Your feedback here:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Enter your message here"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
