@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #034f63;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #01394a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        label {
+            flex: 1;
+            text-align: right;
+            margin-right: 10px;
+        }
+        input, select {
+            flex: 2;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Application Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name">
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name">
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age">
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email address">
+        </div>
+
+        <div class="form-group">
+            <label>Positions Available:</label>
+            <div class="checkbox-group">
+                <input type="radio" name="position"> Junior Developer
+                <input type="radio" name="position"> Mid-level Developer
+                <input type="radio" name="position"> Senior Developer
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Programming Languages:</label>
+            <div class="checkbox-group">
+                <input type="checkbox"> Java
+                <input type="checkbox"> JavaScript
+                <input type="checkbox"> Python
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password">
+        </div>
+
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
